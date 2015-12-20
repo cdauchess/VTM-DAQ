@@ -1,6 +1,6 @@
-D:\Documents\Virginia_Tech\FSAE\PSOC\Current Sensor\CE95277 ADC and UART\VTM16 Current Sensors.cydsn\VTM16 Current Sensors.cyprj|aeabe4f7-4154-4057-ad93-968142d38e9b
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|80bf4970-28c1-482d-adc7-6b47c76c74c7
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|8157d9cd-6d53-4d3e-a2a0-1791ad809ce5
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|25b45e23-1aa3-4349-9ad2-0d74b96b79ea
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|dbc86a26-d972-44cb-993c-f7a52310e15e
-C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|218d6447-ad6a-471c-a7f1-751828ce3e49
+D:\Documents\Virginia_Tech\FSAE\VTM-DAQ\VTM16 PSOC Current Sensor\VTM16 Current Sensors.cydsn\VTM16 Current Sensors.cyprj|03a8fa86-1a69-474c-a0c4-969fd8070d72
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|a95a2c44-1e78-44d9-af98-f09da9d46881
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\default\CyReferenceLibrary\CyReferenceLibrary.cylib\CyReferenceLibrary.cyprj|90c44ba0-83a0-4297-8761-91f6deedd08a
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|5e98dbe9-1820-4a34-a0d0-9a4fd2c93ee2
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|ffa9eeda-162c-4046-a7d3-3fad3fe8c6c8
+C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|458f03d6-2f8d-4945-8931-a6aa76b993ff

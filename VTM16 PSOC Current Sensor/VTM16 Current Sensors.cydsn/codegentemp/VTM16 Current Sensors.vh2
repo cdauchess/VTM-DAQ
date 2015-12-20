@@ -2,7 +2,7 @@
 --	Conversion of VTM16 Current Sensors.v to vh2:
 --
 --	Cypress Semiconductor - WARP Version 6.3 IR 41
---	Wed Dec 09 18:28:58 2015
+--	Sun Dec 20 15:15:53 2015
 --
 
 USE cypress.cypress.all;
