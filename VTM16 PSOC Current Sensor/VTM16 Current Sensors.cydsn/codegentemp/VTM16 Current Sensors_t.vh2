@@ -1,5 +1,5 @@
--- Project:   D:\Documents\Virginia_Tech\FSAE\PSOC\Current Sensor\CE95277 ADC and UART\VTM16 Current Sensors.cydsn\VTM16 Current Sensors.cyprj
--- Generated: 12/09/2015 18:29:08
+-- Project:   D:\Documents\Virginia_Tech\FSAE\VTM-DAQ\VTM16 PSOC Current Sensor\VTM16 Current Sensors.cydsn\VTM16 Current Sensors.cyprj
+-- Generated: 12/20/2015 15:16:03
 -- PSoC Creator  3.3 CP1
 
 ENTITY \VTM16 Current Sensors\ IS

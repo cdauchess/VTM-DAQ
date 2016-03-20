@@ -26,6 +26,8 @@ void main()
     /* Variable to store ADC result */
     int16 Output;
     int32 data[6];
+    int8 lowByte[6];
+    int8 highByte[6];
     /* Variable to store UART received character */
     uint8 Ch;
     /* Variable used to send emulated data */
@@ -106,12 +108,20 @@ void main()
             {
             Output = ADC_SAR_Seq_1_GetResult16(i);
             data[i] = ADC_SAR_Seq_1_CountsTo_mVolts(Output);
+            lowByte[i] = (data[i] & 0xFF);
+            highByte[i] = (0xFF & (data[i] >> 8));            
             }
             //Need to split data into 12 individual bytes for storage in the i2c transmit buffer
+
             tempStatus = EZI2C_1_GetActivity(); 
-            if(tempStatus && EZI2C_1_STATUS_BUSY)
+            if(~(tempStatus & EZI2C_1_STATUS_BUSY)) //Check to make sure that NAND is the right check (it could need to be AND)
             {
-            //set data intoi2c transmit buffer
+            //set data into i2c transmit buffer
+                for(i = 0;i<6;i++)
+                {
+                i2cBuffer[2*i] = lowByte[i];
+                i2cBuffer[2*i+1] = highByte[i];
+                }
             }
             /* Send data based on last UART command */
             if(SendSingleByte || ContinuouslySendData)
