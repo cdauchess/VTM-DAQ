@@ -1,6 +1,6 @@
 // ======================================================================
 // VTM16 Current Sensors.v generated from TopDesign.cysch
-// 12/20/2015 at 15:15
+// 02/22/2016 at 08:36
 // This file is auto generated. ANY EDITS YOU MAKE MAY BE LOST WHEN THIS FILE IS REGENERATED!!!
 // ======================================================================
 
@@ -990,7 +990,7 @@ endmodule
 `include "C:\Program Files (x86)\Cypress\PSoC Creator\3.3\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\OneTerminal\OneTerminal.v"
 `endif
 
-// EZI2C_v2_0(BitWidthReplacementString=uint8, BusSpeed_kHz=400, EnableWakeup=true, Hex1=false, Hex2=false, I2C_Address1=8, I2C_Address2=9, I2C_Addresses=1, I2cBusPort=1, Sub_Address_Size=0, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMPONENT_NAME=EZI2C_v2_0, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=EZI2C_1, CY_INSTANCE_SHORT_NAME=EZI2C_1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP1, INSTANCE_NAME=EZI2C_1, )
+// EZI2C_v2_0(BitWidthReplacementString=uint8, BusSpeed_kHz=100, EnableWakeup=true, Hex1=false, Hex2=false, I2C_Address1=8, I2C_Address2=9, I2C_Addresses=1, I2cBusPort=1, Sub_Address_Size=0, CY_API_CALLBACK_HEADER_INCLUDE=, CY_COMPONENT_NAME=EZI2C_v2_0, CY_CONTROL_FILE=<:default:>, CY_DATASHEET_FILE=<:default:>, CY_FITTER_NAME=EZI2C_1, CY_INSTANCE_SHORT_NAME=EZI2C_1, CY_MAJOR_VERSION=2, CY_MINOR_VERSION=0, CY_REMOVE=false, CY_SUPPRESS_API_GEN=false, CY_VERSION=PSoC Creator  3.3 CP1, INSTANCE_NAME=EZI2C_1, )
 module EZI2C_v2_0_3 (
     sda,
     scl);
@@ -1174,6 +1174,7 @@ module top ;
           wire  Net_32;
     electrical  Net_7;
     electrical  Net_355;
+          wire  Net_725;
           wire  Net_6;
           wire  Net_720;
 
@@ -1895,10 +1896,10 @@ module top ;
 
 	assign tmpOE__Vref_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
 
-	wire [1:0] tmpOE__Pin_1_net;
-	wire [1:0] tmpFB_1__Pin_1_net;
-	wire [0:0] tmpINTERRUPT_0__Pin_1_net;
-	electrical [0:0] tmpSIOVREF__Pin_1_net;
+	wire [1:0] tmpOE__I2C_pins_net;
+	wire [1:0] tmpFB_1__I2C_pins_net;
+	wire [0:0] tmpINTERRUPT_0__I2C_pins_net;
+	electrical [0:0] tmpSIOVREF__I2C_pins_net;
 
 	cy_psoc3_pins_v1_10
 		#(.id("34cfed22-c960-4363-8ecf-2f6fc0d15200"),
@@ -1951,13 +1952,13 @@ module top ;
 		  .ovt_needed(2'b1_1),
 		  .ovt_slew_control(4'b00_00),
 		  .input_buffer_sel(4'b00_00))
-		Pin_1
-		 (.oe(tmpOE__Pin_1_net),
+		I2C_pins
+		 (.oe(tmpOE__I2C_pins_net),
 		  .y({2'b0}),
-		  .fb({tmpFB_1__Pin_1_net[1:0]}),
+		  .fb({tmpFB_1__I2C_pins_net[1:0]}),
 		  .io({Net_720, Net_6}),
-		  .siovref(tmpSIOVREF__Pin_1_net),
-		  .interrupt({tmpINTERRUPT_0__Pin_1_net[0:0]}),
+		  .siovref(tmpSIOVREF__I2C_pins_net),
+		  .interrupt({tmpINTERRUPT_0__I2C_pins_net[0:0]}),
 		  .in_clock({1'b0}),
 		  .in_clock_en({1'b1}),
 		  .in_reset({1'b0}),
@@ -1965,11 +1966,86 @@ module top ;
 		  .out_clock_en({1'b1}),
 		  .out_reset({1'b0}));
 
-	assign tmpOE__Pin_1_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{2'b11} : {2'b11};
+	assign tmpOE__I2C_pins_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{2'b11} : {2'b11};
 
     EZI2C_v2_0_3 EZI2C_1 (
         .sda(Net_720),
         .scl(Net_6));
+
+	wire [0:0] tmpOE__LED_net;
+	wire [0:0] tmpFB_0__LED_net;
+	wire [0:0] tmpIO_0__LED_net;
+	wire [0:0] tmpINTERRUPT_0__LED_net;
+	electrical [0:0] tmpSIOVREF__LED_net;
+
+	cy_psoc3_pins_v1_10
+		#(.id("e851a3b9-efb8-48be-bbb8-b303b216c393"),
+		  .drive_mode(3'b110),
+		  .ibuf_enabled(1'b1),
+		  .init_dr_st(1'b0),
+		  .input_clk_en(0),
+		  .input_sync(1'b1),
+		  .input_sync_mode(1'b0),
+		  .intr_mode(2'b00),
+		  .invert_in_clock(0),
+		  .invert_in_clock_en(0),
+		  .invert_in_reset(0),
+		  .invert_out_clock(0),
+		  .invert_out_clock_en(0),
+		  .invert_out_reset(0),
+		  .io_voltage(""),
+		  .layout_mode("CONTIGUOUS"),
+		  .oe_conn(1'b0),
+		  .oe_reset(0),
+		  .oe_sync(1'b0),
+		  .output_clk_en(0),
+		  .output_clock_mode(1'b0),
+		  .output_conn(1'b1),
+		  .output_mode(1'b0),
+		  .output_reset(0),
+		  .output_sync(1'b0),
+		  .pa_in_clock(-1),
+		  .pa_in_clock_en(-1),
+		  .pa_in_reset(-1),
+		  .pa_out_clock(-1),
+		  .pa_out_clock_en(-1),
+		  .pa_out_reset(-1),
+		  .pin_aliases(""),
+		  .pin_mode("O"),
+		  .por_state(4),
+		  .sio_group_cnt(0),
+		  .sio_hyst(1'b1),
+		  .sio_ibuf(""),
+		  .sio_info(2'b00),
+		  .sio_obuf(""),
+		  .sio_refsel(""),
+		  .sio_vtrip(""),
+		  .slew_rate(1'b0),
+		  .spanning(0),
+		  .use_annotation(1'b0),
+		  .vtrip(2'b10),
+		  .width(1),
+		  .ovt_hyst_trim(1'b0),
+		  .ovt_needed(1'b0),
+		  .ovt_slew_control(2'b00),
+		  .input_buffer_sel(2'b00))
+		LED
+		 (.oe(tmpOE__LED_net),
+		  .y({Net_725}),
+		  .fb({tmpFB_0__LED_net[0:0]}),
+		  .io({tmpIO_0__LED_net[0:0]}),
+		  .siovref(tmpSIOVREF__LED_net),
+		  .interrupt({tmpINTERRUPT_0__LED_net[0:0]}),
+		  .in_clock({1'b0}),
+		  .in_clock_en({1'b1}),
+		  .in_reset({1'b0}),
+		  .out_clock({1'b0}),
+		  .out_clock_en({1'b1}),
+		  .out_reset({1'b0}));
+
+	assign tmpOE__LED_net = (`CYDEV_CHIP_MEMBER_USED == `CYDEV_CHIP_MEMBER_3A && `CYDEV_CHIP_REVISION_USED < `CYDEV_CHIP_REVISION_3A_ES3) ? ~{1'b1} : {1'b1};
+
+    assign Net_725 = 1'h1;
 
 
 

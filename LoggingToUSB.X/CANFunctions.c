@@ -163,7 +163,7 @@ void CAN2Init(void)
     canBitConfig.sample3Time            = TRUE;
     canBitConfig.syncJumpWidth          = CAN_BIT_2TQ;
 
-    CANSetSpeed(CAN2,&canBitConfig,SYSTEM_FREQ,CAN_BUS_SPEED);
+    CANSetSpeed(CAN2,&canBitConfig,SYSTEM_FREQ,1000000);
 
     /* Step 3: Assign the buffer area to the
     * CAN module.
@@ -188,7 +188,7 @@ void CAN2Init(void)
     * messages are stored in channel 1.  */
 
     CANConfigureFilter      (CAN2, CAN_FILTER0, 0x202, CAN_SID);
-    CANConfigureFilterMask  (CAN2, CAN_FILTER_MASK0, 0xFFF, CAN_SID, CAN_FILTER_MASK_IDE_TYPE);
+    CANConfigureFilterMask  (CAN2, CAN_FILTER_MASK0, 0x0, CAN_SID, CAN_FILTER_MASK_IDE_TYPE);
     CANLinkFilterToChannel  (CAN2, CAN_FILTER0, CAN_FILTER_MASK0, CAN_CHANNEL1);
     CANEnableFilter         (CAN2, CAN_FILTER0, TRUE);
 

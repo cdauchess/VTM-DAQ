@@ -1,4 +1,4 @@
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 1
 
 
    1              		.syntax unified
@@ -58,7 +58,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
   23:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** 
   24:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** 
   25:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** 
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 2
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 2
 
 
   26:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** /****************************************************************************
@@ -118,7 +118,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
   80:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** *       
   81:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** *       
   82:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** *   ReqestPerBurst.
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 3
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 3
 
 
   83:.\Generated_Source\PSoC5/ADC_SAR_Seq_1_FinalBuf_dma.c **** *       
@@ -178,7 +178,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
   65 0028 F979     		ldrb	r1, [r7, #7]	@ zero_extendqisi2
   66 002a BA79     		ldrb	r2, [r7, #6]	@ zero_extendqisi2
   67 002c 0023     		movs	r3, #0
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 4
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 4
 
 
   68 002e 0093     		str	r3, [sp]
@@ -238,7 +238,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  108              		.global	ADC_SAR_Seq_1_FinalBuf_DmaRelease
  109              		.thumb
  110              		.thumb_func
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 5
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 5
 
 
  111              		.type	ADC_SAR_Seq_1_FinalBuf_DmaRelease, %function
@@ -298,15 +298,15 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  143 0000 0E010000 		.4byte	0x10e
  144 0004 0400     		.2byte	0x4
  145 0006 00000000 		.4byte	.Ldebug_abbrev0
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 6
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 6
 
 
  146 000a 04       		.byte	0x4
  147 000b 01       		.uleb128 0x1
- 148 000c 08010000 		.4byte	.LASF19
+ 148 000c FE000000 		.4byte	.LASF19
  149 0010 01       		.byte	0x1
  150 0011 5B000000 		.4byte	.LASF20
- 151 0015 96010000 		.4byte	.LASF21
+ 151 0015 13020000 		.4byte	.LASF21
  152 0019 00000000 		.4byte	.Ldebug_ranges0+0
  153 001d 00000000 		.4byte	0
  154 0021 00000000 		.4byte	.Ldebug_line0
@@ -321,23 +321,23 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  163 0033 03       		.uleb128 0x3
  164 0034 01       		.byte	0x1
  165 0035 06       		.byte	0x6
- 166 0036 0E020000 		.4byte	.LASF1
+ 166 0036 B0010000 		.4byte	.LASF1
  167 003a 03       		.uleb128 0x3
  168 003b 01       		.byte	0x1
  169 003c 08       		.byte	0x8
- 170 003d EC000000 		.4byte	.LASF2
+ 170 003d E2000000 		.4byte	.LASF2
  171 0041 03       		.uleb128 0x3
  172 0042 02       		.byte	0x2
  173 0043 05       		.byte	0x5
- 174 0044 A9000000 		.4byte	.LASF3
+ 174 0044 8C010000 		.4byte	.LASF3
  175 0048 03       		.uleb128 0x3
  176 0049 02       		.byte	0x2
  177 004a 07       		.byte	0x7
- 178 004b FB010000 		.4byte	.LASF4
+ 178 004b 9D010000 		.4byte	.LASF4
  179 004f 03       		.uleb128 0x3
  180 0050 04       		.byte	0x4
  181 0051 05       		.byte	0x5
- 182 0052 FF000000 		.4byte	.LASF5
+ 182 0052 F5000000 		.4byte	.LASF5
  183 0056 03       		.uleb128 0x3
  184 0057 04       		.byte	0x4
  185 0058 07       		.byte	0x7
@@ -349,16 +349,16 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  191 0064 03       		.uleb128 0x3
  192 0065 08       		.byte	0x8
  193 0066 07       		.byte	0x7
- 194 0067 B3000000 		.4byte	.LASF8
+ 194 0067 A9000000 		.4byte	.LASF8
  195 006b 03       		.uleb128 0x3
  196 006c 04       		.byte	0x4
  197 006d 07       		.byte	0x7
- 198 006e 68020000 		.4byte	.LASF9
+ 198 006e 0A020000 		.4byte	.LASF9
  199 0072 03       		.uleb128 0x3
  200 0073 01       		.byte	0x1
  201 0074 08       		.byte	0x8
- 202 0075 FA000000 		.4byte	.LASF10
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 7
+ 202 0075 F0000000 		.4byte	.LASF10
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 7
 
 
  203 0079 04       		.uleb128 0x4
@@ -367,18 +367,18 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  206 007f C2       		.byte	0xc2
  207 0080 3A000000 		.4byte	0x3a
  208 0084 04       		.uleb128 0x4
- 209 0085 61020000 		.4byte	.LASF12
+ 209 0085 03020000 		.4byte	.LASF12
  210 0089 02       		.byte	0x2
  211 008a C3       		.byte	0xc3
  212 008b 48000000 		.4byte	0x48
  213 008f 03       		.uleb128 0x3
  214 0090 04       		.byte	0x4
  215 0091 04       		.byte	0x4
- 216 0092 29020000 		.4byte	.LASF13
+ 216 0092 CB010000 		.4byte	.LASF13
  217 0096 03       		.uleb128 0x3
  218 0097 08       		.byte	0x8
  219 0098 04       		.byte	0x4
- 220 0099 F4010000 		.4byte	.LASF14
+ 220 0099 96010000 		.4byte	.LASF14
  221 009d 05       		.uleb128 0x5
  222 009e 2B000000 		.4byte	.LASF22
  223 00a2 01       		.byte	0x1
@@ -398,7 +398,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  237 00c2 91       		.byte	0x91
  238 00c3 6F       		.sleb128 -17
  239 00c4 06       		.uleb128 0x6
- 240 00c5 1A020000 		.4byte	.LASF16
+ 240 00c5 BC010000 		.4byte	.LASF16
  241 00c9 01       		.byte	0x1
  242 00ca 61       		.byte	0x61
  243 00cb 79000000 		.4byte	0x79
@@ -414,11 +414,11 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  253 00de 91       		.byte	0x91
  254 00df 6C       		.sleb128 -20
  255 00e0 06       		.uleb128 0x6
- 256 00e1 2F020000 		.4byte	.LASF18
+ 256 00e1 D1010000 		.4byte	.LASF18
  257 00e5 01       		.byte	0x1
  258 00e6 61       		.byte	0x61
  259 00e7 84000000 		.4byte	0x84
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 8
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 8
 
 
  260 00eb 02       		.uleb128 0x2
@@ -426,7 +426,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  262 00ed 6A       		.sleb128 -22
  263 00ee 00       		.byte	0
  264 00ef 07       		.uleb128 0x7
- 265 00f0 CA000000 		.4byte	.LASF23
+ 265 00f0 C0000000 		.4byte	.LASF23
  266 00f4 01       		.byte	0x1
  267 00f5 88       		.byte	0x88
  268 00f6 00000000 		.4byte	.LFB1
@@ -434,7 +434,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  270 00fe 01       		.uleb128 0x1
  271 00ff 9C       		.byte	0x9c
  272 0100 08       		.uleb128 0x8
- 273 0101 40020000 		.4byte	.LASF24
+ 273 0101 E2010000 		.4byte	.LASF24
  274 0105 01       		.byte	0x1
  275 0106 45       		.byte	0x45
  276 0107 79000000 		.4byte	0x79
@@ -478,7 +478,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  314 001f 24       		.uleb128 0x24
  315 0020 00       		.byte	0
  316 0021 0B       		.uleb128 0xb
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 9
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 9
 
 
  317 0022 0B       		.uleb128 0xb
@@ -538,7 +538,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  371 0059 3B       		.uleb128 0x3b
  372 005a 0B       		.uleb128 0xb
  373 005b 49       		.uleb128 0x49
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 10
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 10
 
 
  374 005c 13       		.uleb128 0x13
@@ -598,7 +598,7 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  428 0010 00000000 		.4byte	.LFB0
  429 0014 68000000 		.4byte	.LFE0-.LFB0
  430 0018 00000000 		.4byte	.LFB1
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 11
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 11
 
 
  431 001c 14000000 		.4byte	.LFE1-.LFB1
@@ -658,108 +658,111 @@ ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 1
  460              	.LASF6:
  461 0097 6C6F6E67 		.ascii	"long unsigned int\000"
  461      20756E73 
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 12
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 12
 
 
  461      69676E65 
  461      6420696E 
  461      7400
- 462              	.LASF3:
- 463 00a9 73686F72 		.ascii	"short int\000"
- 463      7420696E 
- 463      7400
- 464              	.LASF8:
- 465 00b3 6C6F6E67 		.ascii	"long long unsigned int\000"
- 465      206C6F6E 
- 465      6720756E 
- 465      7369676E 
- 465      65642069 
- 466              	.LASF23:
- 467 00ca 4144435F 		.ascii	"ADC_SAR_Seq_1_FinalBuf_DmaRelease\000"
- 467      5341525F 
- 467      5365715F 
- 467      315F4669 
- 467      6E616C42 
- 468              	.LASF2:
- 469 00ec 756E7369 		.ascii	"unsigned char\000"
- 469      676E6564 
- 469      20636861 
- 469      7200
- 470              	.LASF10:
- 471 00fa 63686172 		.ascii	"char\000"
+ 462              	.LASF8:
+ 463 00a9 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 463      206C6F6E 
+ 463      6720756E 
+ 463      7369676E 
+ 463      65642069 
+ 464              	.LASF23:
+ 465 00c0 4144435F 		.ascii	"ADC_SAR_Seq_1_FinalBuf_DmaRelease\000"
+ 465      5341525F 
+ 465      5365715F 
+ 465      315F4669 
+ 465      6E616C42 
+ 466              	.LASF2:
+ 467 00e2 756E7369 		.ascii	"unsigned char\000"
+ 467      676E6564 
+ 467      20636861 
+ 467      7200
+ 468              	.LASF10:
+ 469 00f0 63686172 		.ascii	"char\000"
+ 469      00
+ 470              	.LASF5:
+ 471 00f5 6C6F6E67 		.ascii	"long int\000"
+ 471      20696E74 
  471      00
- 472              	.LASF5:
- 473 00ff 6C6F6E67 		.ascii	"long int\000"
- 473      20696E74 
- 473      00
- 474              	.LASF19:
- 475 0108 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
- 475      4320342E 
- 475      392E3320 
- 475      32303135 
- 475      30333033 
- 476 013b 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
- 476      20726576 
- 476      6973696F 
- 476      6E203232 
- 476      31323230 
- 477 016e 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
- 477      66756E63 
- 477      74696F6E 
- 477      2D736563 
- 477      74696F6E 
- 478              	.LASF21:
- 479 0196 443A5C44 		.ascii	"D:\\Documents\\Virginia_Tech\\FSAE\\VTM-DAQ\\VTM16 "
- 479      6F63756D 
- 479      656E7473 
- 479      5C566972 
- 479      67696E69 
- 480 01c4 50534F43 		.ascii	"PSOC Current Sensor\\VTM16 Current Sensors.cydsn\000"
- 480      20437572 
- 480      72656E74 
- 480      2053656E 
-ARM GAS  C:\Users\Charlie\AppData\Local\Temp\ccPbCW4J.s 			page 13
+ 472              	.LASF19:
+ 473 00fe 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 473      4320342E 
+ 473      392E3320 
+ 473      32303135 
+ 473      30333033 
+ 474 0131 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 474      20726576 
+ 474      6973696F 
+ 474      6E203232 
+ 474      31323230 
+ 475 0164 30202D66 		.ascii	"0 -ffunction-sections -ffat-lto-objects\000"
+ 475      66756E63 
+ 475      74696F6E 
+ 475      2D736563 
+ 475      74696F6E 
+ 476              	.LASF3:
+ 477 018c 73686F72 		.ascii	"short int\000"
+ 477      7420696E 
+ 477      7400
+ 478              	.LASF14:
+ 479 0196 646F7562 		.ascii	"double\000"
+ 479      6C6500
+ 480              	.LASF4:
+ 481 019d 73686F72 		.ascii	"short unsigned int\000"
+ 481      7420756E 
+ 481      7369676E 
+ 481      65642069 
+ 481      6E7400
+ 482              	.LASF1:
+ARM GAS  C:\Users\charl\AppData\Local\Temp\ccNnzUoj.s 			page 13
 
 
- 480      736F725C 
- 481              	.LASF14:
- 482 01f4 646F7562 		.ascii	"double\000"
- 482      6C6500
- 483              	.LASF4:
- 484 01fb 73686F72 		.ascii	"short unsigned int\000"
- 484      7420756E 
- 484      7369676E 
- 484      65642069 
- 484      6E7400
- 485              	.LASF1:
- 486 020e 7369676E 		.ascii	"signed char\000"
- 486      65642063 
- 486      68617200 
- 487              	.LASF16:
- 488 021a 52657165 		.ascii	"ReqestPerBurst\000"
- 488      73745065 
- 488      72427572 
- 488      737400
- 489              	.LASF13:
- 490 0229 666C6F61 		.ascii	"float\000"
- 490      7400
- 491              	.LASF18:
- 492 022f 55707065 		.ascii	"UpperDestAddress\000"
- 492      72446573 
- 492      74416464 
- 492      72657373 
- 492      00
- 493              	.LASF24:
- 494 0240 4144435F 		.ascii	"ADC_SAR_Seq_1_FinalBuf_DmaHandle\000"
- 494      5341525F 
- 494      5365715F 
- 494      315F4669 
- 494      6E616C42 
- 495              	.LASF12:
- 496 0261 75696E74 		.ascii	"uint16\000"
- 496      313600
- 497              	.LASF9:
- 498 0268 73697A65 		.ascii	"sizetype\000"
- 498      74797065 
- 498      00
- 499              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
+ 483 01b0 7369676E 		.ascii	"signed char\000"
+ 483      65642063 
+ 483      68617200 
+ 484              	.LASF16:
+ 485 01bc 52657165 		.ascii	"ReqestPerBurst\000"
+ 485      73745065 
+ 485      72427572 
+ 485      737400
+ 486              	.LASF13:
+ 487 01cb 666C6F61 		.ascii	"float\000"
+ 487      7400
+ 488              	.LASF18:
+ 489 01d1 55707065 		.ascii	"UpperDestAddress\000"
+ 489      72446573 
+ 489      74416464 
+ 489      72657373 
+ 489      00
+ 490              	.LASF24:
+ 491 01e2 4144435F 		.ascii	"ADC_SAR_Seq_1_FinalBuf_DmaHandle\000"
+ 491      5341525F 
+ 491      5365715F 
+ 491      315F4669 
+ 491      6E616C42 
+ 492              	.LASF12:
+ 493 0203 75696E74 		.ascii	"uint16\000"
+ 493      313600
+ 494              	.LASF9:
+ 495 020a 73697A65 		.ascii	"sizetype\000"
+ 495      74797065 
+ 495      00
+ 496              	.LASF21:
+ 497 0213 433A5C55 		.ascii	"C:\\Users\\charl\\Documents\\Virginia_Tech\\FSAE\\V"
+ 497      73657273 
+ 497      5C636861 
+ 497      726C5C44 
+ 497      6F63756D 
+ 498 0240 544D2D44 		.ascii	"TM-DAQ\\VTM16 PSOC Current Sensor\\VTM16 Current Se"
+ 498      41515C56 
+ 498      544D3136 
+ 498      2050534F 
+ 498      43204375 
+ 499 0271 6E736F72 		.ascii	"nsors.cydsn\000"
+ 499      732E6379 
+ 499      64736E00 
+ 500              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

@@ -29,7 +29,7 @@
 *   Initial Parameter Constants
 ***************************************/
 
-#define EZI2C_1_DATA_RATE      (400u)
+#define EZI2C_1_DATA_RATE      (100u)
 #define EZI2C_1_BUS_PORT       (1u)
 #define EZI2C_1_ENABLE_WAKEUP  (1u)
 #define EZI2C_1_SUBADDR_WIDTH  (0u)

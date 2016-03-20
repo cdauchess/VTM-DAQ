@@ -49,7 +49,7 @@
 #define CAN_BUS_SPEED 500000
 
 #define CAN1_BRPVAL	0x7			/* CAN speed select - 0x7 for 500kbps, 0xF for 250Kbps, 0x3 for 1Mbps 		*/
-#define CAN2_BRPVAL 0x7			/* Use same speed for both CAN modules. Time quanta per bit is set to 10.	*/
+#define CAN2_BRPVAL 0x3			/* Use same speed for both CAN modules. Time quanta per bit is set to 10.	*/
 								/* See function CAN1Init() and CAN2Init().*/
 
 extern BYTE CAN1MessageFifoArea[2 * 8 * 16];	/* This is the CAN1 FIFO message area.	*/

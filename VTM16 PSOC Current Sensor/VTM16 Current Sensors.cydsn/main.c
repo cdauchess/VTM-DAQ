@@ -3,10 +3,11 @@
 * File Name			: main.c
 * Version 			: **
 * Device Used		: CY8C5888LTI-LP097
-* Software Used		: PSoC Creator 3.1 SP2
+* Software Used		: PSoC Creator 3.3 SP2
 * Compiler    		: ARM GCC 4.8.4, ARM RVDS Generic, ARM MDK Generic
 * Related Hardware	: CY8CKIT059 PSoC 5 LP Prototyping Kit 
 *******************************************************************************/
+//This started as the UART-ADC sample program for the PSOC 5lP.  Much of the code from the example can still be seen in here.
 
 #include <device.h>
 #include "stdio.h"
@@ -14,9 +15,10 @@
 /* Project Defines */
 #define FALSE  0
 #define TRUE   1
-#define TRANSMIT_BUFFER_SIZE  16
+#define TRANSMIT_BUFFER_SIZE  16 //UART 
+/*I2C*/
 #define I2C_BUFFER_SIZE 0x0C
-#define I2C_RW_AREA_SIZE 0x00
+#define I2C_RW_AREA_SIZE 0x01 //needs to be 0x01 to have a place for the offset data pointer?
 
 
 //Need to use ezi2c_get_activity to develop a mechanism for data coherency
@@ -26,8 +28,8 @@ void main()
     /* Variable to store ADC result */
     int16 Output;
     int32 data[6];
-    int8 lowByte[6];
-    int8 highByte[6];
+    uint8 lowByte[6];
+    uint8 highByte[6];
     /* Variable to store UART received character */
     uint8 Ch;
     /* Variable used to send emulated data */
@@ -37,10 +39,10 @@ void main()
     uint8 SendSingleByte;
     uint8 SendEmulatedData;
     //Set Up i2c variables
+    CYGlobalIntEnable; //Enable global interrupts for the I2C module
     uint8 i2cBuffer[I2C_BUFFER_SIZE];
-    uint8 tempStatus;
     /* Transmit Buffer */
-    char TransmitBuffer[TRANSMIT_BUFFER_SIZE];
+    char TransmitBuffer[TRANSMIT_BUFFER_SIZE];//UART
     
     
     int i;
@@ -98,29 +100,26 @@ void main()
         //At some point should switch to interrupts
         if(ADC_SAR_Seq_1_IsEndConversion(ADC_SAR_Seq_1_RETURN_STATUS))
         {
-            /* Use the GetResult16 API to get an 8 bit unsigned result in
-             * single ended mode.  The API CountsTo_mVolts is then used
-             * to convert the ADC counts into mV before transmitting via
-             * the UART.  See the datasheet API description for more
-             * details */
             i = 0;
             for(i = 0;i<6;i++)
             {
             Output = ADC_SAR_Seq_1_GetResult16(i);
             data[i] = ADC_SAR_Seq_1_CountsTo_mVolts(Output);
+            //Split the data so that each data point is two bytes so that it can be easily loaded into the transmit buffer            
             lowByte[i] = (data[i] & 0xFF);
             highByte[i] = (0xFF & (data[i] >> 8));            
             }
-            //Need to split data into 12 individual bytes for storage in the i2c transmit buffer
 
-            tempStatus = EZI2C_1_GetActivity(); 
-            if(~(tempStatus & EZI2C_1_STATUS_BUSY)) //Check to make sure that NAND is the right check (it could need to be AND)
+ 
+            
+            if((EZI2C_1_GetActivity() & EZI2C_1_STATUS_BUSY)== 0) //Use this to not interfere with cerebot while writing to buffer
             {
             //set data into i2c transmit buffer
+            //Results in 12 bytes in the transmit buffer
                 for(i = 0;i<6;i++)
                 {
-                i2cBuffer[2*i] = lowByte[i];
-                i2cBuffer[2*i+1] = highByte[i];
+                i2cBuffer[2*i] = lowByte[i];  //First byte
+                i2cBuffer[2*i+1] = highByte[i]; //Second Byte
                 }
             }
             /* Send data based on last UART command */
